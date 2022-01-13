@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jost";
+  transition: 0.5s;
+  font-weight: bold;
+}
+body {
+  background: linear-gradient(
+    89.84deg,
+    #fc5c7d -18%,
+    #b26fbd 22.09%,
+    #6a82fb 99.87%
+  );
+}
+button,
+input {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.tac {
+  text-align: center;
+}
+
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.fdrc {
+  flex-direction: column;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.ais {
+  align-items: start;
+}
+
+/* start */
+.header {
+  height: 100vh;
+  width: 100%;
+
+  position: static;
+}
+nav .logo {
+  font-size: 25px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.header__content {
+  margin: 250px 0;
+}
+.header__content h1 {
+  font-size: 50px;
+  line-height: 101px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 70px;
+}
+h2.footer {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 22px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.input__link {
+  font-size: 23px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.input__link input {
+  display: flex;
+  margin-left: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 10px 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 23px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #000;
+}
+.generateBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 50px;
+  background: linear-gradient(90deg, #c519c5 0%, #f4a4b2 100%);
+  border-radius: 10px;
+  font-size: 23px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.generation__code {
+  text-align: center;
+}
+.github .github__link span {
+  display: none;
+}
+.scan__me {
+  width: 355px;
+  padding: 30px 30px 20px;
+  height: auto;
+  background: #fff;
+  border-radius: 20px;
+}
+.scan__me h2 {
+  margin-top: 30px;
+  font-size: 40px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.download-btn {
+  font-size: 27px;
+  line-height: 51px;
+  text-transform: uppercase;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 50px;
+  margin: 30px auto 0;
+}
+@media (max-width: 1450px) {
+  .header__content {
+    margin: 60px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .header__content {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+  }
+  .header__content .generation__text {
+    margin: 0 auto;
+  }
+  .generation__inputs {
+    flex-direction: column;
+  }
+  .generation__inputs .input__link {
+    margin-bottom: 30px;
+  }
+  .generation__code {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  h2.footer {
+    position: static;
+    bottom: auto;
+    right: auto;
+    transform: translateX(0);
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .github img {
+    display: none;
+  }
+  .github {
+    right: 20px;
+  }
+  .github .github__link span {
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .header__content h1 {
+    font-size: 33px;
+  }
+  .input__link,
+  .input__link input,
+  .generateBtn,
+  .download-btn {
+    font-size: 21px;
+  }
+  .scan__me {
+    width: max-content;
+    padding: 20px 25px 20px;
+  }
+  .scan__me h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 320px;
+  }
+  .header__content h1 {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  nav {
+    flex-direction: column;
+    text-align: end;
+  }
+  .github {
+    position: relative;
+  }
+  nav .logo {
+    font-size: 17px;
+  }
+  .github .github__link span {
+    font-size: 17px;
+  }
+  .input__link,
+  .input__link input,
+  .generateBtn,
+  .download-btn {
+    font-size: 18px;
+  }
+  .input__link input {
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    line-height: 30px;
+  }
+  .generateBtn, .download-btn {
+    padding: 5px 30px;
+    line-height: 30px;
+  }
+  .scan__me h2 {
+    font-size: 23px;
+  }
+  .scan__me img{
+    width: auto;
+  }
+  .scan__me{
+    padding: 15px;
+  }
+}
